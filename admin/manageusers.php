@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "acrls_db";
+$dbname = "acrlsdb";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -118,7 +118,7 @@ include("header.php")
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "acrls_db";
+$database = "acrlsdb";
 
 // Create a connection to the database
 $conn = new mysqli($servername, $username, $password, $database);
@@ -156,9 +156,11 @@ $result = $conn->query($query);
         </div>
         <div class="card-body">
           <table id="example1" class="table table-bordered table-striped">
-            <button type="button" id="addUserButton" class="btn btn-app bg-info">
-                  <i class="fa fa-circle-plus mb-1"></i>Add Users
-                </button>
+          <button type="button" id="addUserButton" class="btn btn-app bg-info">
+   <a href="add_user.php">
+      <i class="fa fa-circle-plus mb-1"></i>Add Users
+   </a>
+</button>
             <thead>
               <tr>
                 <th class="text-center">First Name</th>
