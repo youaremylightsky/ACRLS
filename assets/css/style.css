@@ -1,0 +1,32 @@
+/* Add a minimum height to the .wrapper to ensure the footer is at the bottom */
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Style for the footer */
+.main-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #333; /* Customize the background color */
+  padding: 10px 0; /* Add padding for better visibility */
+}
+
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Light Mode */
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+}
+
+
+
+
+
